@@ -5,3 +5,4 @@
 5. 4-listmorefiles ~ display current directory contents, including hidden files
 6. 5-listfilesdigitonly ~ display current directory contents numerically
 7. 6-firstdirectory ~ creates a directory named my_first_directory in the /tmp/ directory
+8. 7-movethatfile ~ Moves the file betty from /tmp/ to /tmp/my_first_directory
