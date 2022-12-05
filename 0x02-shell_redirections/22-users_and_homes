@@ -1,2 +1,2 @@
 #!/bin/bash
-getent passwd | cut -d: -f1 | ls -l ~
+cut -d: -f1 /etc/passwd | sort
