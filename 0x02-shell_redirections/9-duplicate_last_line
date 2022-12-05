@@ -1,2 +1,2 @@
 #!/bin/bash
-less iacta | tail -1 | yy | p
+vi iacta | G | yy | p
