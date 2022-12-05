@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$string" | tr 'Z' 'A' | tr 'c' 'e'
+| tr 'Z' 'A' | tr 'c' 'e'
