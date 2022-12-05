@@ -1,2 +1,2 @@
 #!/bin/bash
-cat file | sort -u | uniq
+cat -u file | sort -u | uniq
