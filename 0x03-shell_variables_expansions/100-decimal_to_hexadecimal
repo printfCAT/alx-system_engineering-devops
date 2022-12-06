@@ -1,0 +1,2 @@
+#!/bin/bash
+hex=$(([##16]DECIMAL))
