@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # prints out ls removing the first number and dash bit
-ls > list
-for i in $(<list); do
-    echo "${i/[0-9]*-}"
+for file in *; do
+    if [[ $file != .* ]]; then
+        name=${file#*-}
+        echo "$name"
+    fi
 done
