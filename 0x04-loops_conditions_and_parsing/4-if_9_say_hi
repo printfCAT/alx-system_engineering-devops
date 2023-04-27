@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script prints "Best School" and "Hi" on the 9th line
+# using while loop and if condition
+i=0; while [ $i -lt 10 ]; do
+    if [ $i -eq 8 ]; then
+        echo -e  "Best School\nHi";
+    else
+        echo "Best School";
+    fi;
+    i=$((i+1));
+done
