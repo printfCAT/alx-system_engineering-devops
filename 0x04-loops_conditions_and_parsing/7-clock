@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints hours and minutes of the clock
 i=0;
-while [ $i -lt 12 ]; do
+while [ $i -le 12 ]; do
     echo "Hour: $i";
     j=1;
     while [ $j -le 59 ]; do
@@ -9,5 +9,4 @@ while [ $i -lt 12 ]; do
         j=$((j+1));
     done
     i=$((i+1));
-echo "Hour: $i";
 done
