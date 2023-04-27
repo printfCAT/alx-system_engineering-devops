@@ -9,4 +9,5 @@ while [ $i -lt 12 ]; do
         j=$((j+1));
     done
     i=$((i+1));
+echo "Hour: $i";
 done
