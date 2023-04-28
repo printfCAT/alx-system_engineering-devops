@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# prints "To infinity and beyond" indefinitely
+i=0
+trap 'echo "I am invincible!!!"' SIGINT
+while [ $i -lt 1 ]; do
+    echo "To infinity and beyond"
+    sleep 2
+done
