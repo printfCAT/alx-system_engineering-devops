@@ -3,5 +3,5 @@
 if [ -z $# ]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
-    ping -w 5 $1
+    ping -c 5 "$1"
 fi
