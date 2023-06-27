@@ -3,7 +3,6 @@
 apt-get update
 apt-get install -y nginx
 mkdir /etc/nginx/html
-mkdir /etc/nginx/FourOhFour
 touch /etc/nginx/html/index.html
 touch /etc/nginx/html/FourOhFour.html
 echo "Hello World!" > /etc/nginx/html/index.html
@@ -15,10 +14,10 @@ printf %s "server {
      index       index.html index.htm;
 
     location /redirect_me {
-        return 301 https://example.com/new-page;
+        return 301 https://example.com/;
 
     error_page 404 /FourOhFour.html;
-    location /FourOhFour {
+    location /404 {
         root /etc/nginx/FourOhFour;
         internal;
     }
