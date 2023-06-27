@@ -17,7 +17,7 @@ printf %s "server {
     location /redirect_me {
         return 301 https://example.com/new-page;
 
-    error_page 404 /FourOhFour.html;
+    error_page FourOhFour /FourOhFour.html;
     location /FourOhFour {
         root /etc/nginx/FourOhFour;
         internal;
