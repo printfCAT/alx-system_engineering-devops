@@ -1,7 +1,7 @@
 #!/bin/bash
 # installs and configures nginx for our web-01 server
-apt update
-apt install -y nginx
+apt-get update
+apt-get install -y nginx
 echo '
 server {
     listen 80;
