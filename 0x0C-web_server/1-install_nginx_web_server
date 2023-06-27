@@ -2,11 +2,14 @@
 # installs and configures nginx for our web-01 server
 apt-get update
 apt-get install -y nginx
-echo '
-server {
-    listen 80;
-    location / {
-        return 200 "Hello World!";
-    }
-}' | tee /etc/nginx/sites-available/default
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
+echo "server {
+     listen      80 default_server;
+     listen      [::]:80 default_server;
+     root        /etc/nginx/html;
+     index       index.html index.htm;
+}
+" > /etc/nginx/sites-available/default
 service nginx restart
