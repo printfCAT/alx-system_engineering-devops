@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+t#!/usr/bin/env bash
 # Installs and configures Nginx on our web-01 server:
 apt-get update
 apt-get install -y nginx
@@ -17,10 +17,10 @@ printf %s "server {
     location /redirect_me {
         return 301 https://example.com/new-page;
 
-    error_page 404 /FourOhFour/index.html;
-
+    error_page 404 /FourOhFour.html;
     location /FourOhFour {
-        alias /etc/nginx/FourOhFour;
+        root /etc/nginx/FourOhFour;
+        internal;
     }
 }" > /etc/nginx/sites-available/default
 service nginx restart
