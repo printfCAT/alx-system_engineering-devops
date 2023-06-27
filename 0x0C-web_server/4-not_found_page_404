@@ -18,7 +18,7 @@ printf %s "server {
 
     error_page 404 /FourOhFour.html;
     location /404 {
-        root /etc/nginx/FourOhFour;
+        root /etc/nginx/html;
         internal;
     }
 }" > /etc/nginx/sites-available/default
