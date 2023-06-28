@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# fixes an error in docker
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
