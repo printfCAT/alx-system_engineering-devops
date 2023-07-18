@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # runs the command whoami as a specific user
-sudo -u "$1" whoami
+if [ -z "$1" ]; then
+    whoami;
+else
+    sudo -u "$1" whoami;
+fi;
